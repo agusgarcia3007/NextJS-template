@@ -11,10 +11,6 @@ To get started with this template, follow these steps:
 3. Start the development server: `npm run dev`
 4. Open your browser and navigate to `http://localhost:3000`
 
-## Features
-
-- App router: This template includes the app router, which allows you to easily navigate between different pages in your Next.js application.
-
 ## Additional Features
 
 This template also includes the following features:
