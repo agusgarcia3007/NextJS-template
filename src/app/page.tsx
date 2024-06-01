@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
@@ -6,6 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { socialData } from '@/lib/social-data';
+import { Github } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Home() {
   const stack = [
@@ -31,7 +35,14 @@ export default function Home() {
             ))}
           </ul>
         </CardContent>
-        <CardFooter>Give a star on Github</CardFooter>
+        <CardFooter className='gap-x-2'>
+          Give a star on Github
+          <Button size='icon' variant='ghost' asChild>
+            <Link href={socialData.githubLink}>
+              <Github />
+            </Link>
+          </Button>
+        </CardFooter>
       </Card>
     </main>
   );
